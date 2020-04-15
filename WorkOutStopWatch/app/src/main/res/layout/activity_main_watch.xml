@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="31dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgcircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pointer"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="31dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icanchor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/digitalTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintTop_toBottomOf="@+id/circle" />
+
+    <Button
+        android:id="@+id/stopTimer"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/rbckbutton"
+        android:fontFamily="@font/mmedium"
+        android:text="Stop Timer"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digitalTimer" />
+
+    <Button
+        android:id="@+id/startTimer"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bckbutton"
+        android:fontFamily="@font/mmedium"
+        android:text="Start Timer"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digitalTimer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

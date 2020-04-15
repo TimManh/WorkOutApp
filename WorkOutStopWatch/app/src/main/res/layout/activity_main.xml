@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/frontView"
+        android:layout_width="380dp"
+        android:layout_height="390dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/treadmill"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/healthyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Be Healthy"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:fontFamily="@font/mregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frontView" />
+
+    <TextView
+        android:id="@+id/sologan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/mlight"
+        android:gravity="center"
+        android:text="Stay Safe \n and \n Stay Healthy"
+        android:textColor="#8A7979"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthyText" />
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bckbutton"
+        android:fontFamily="@font/mmedium"
+        android:text="Get Started"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sologan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
